@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block registeration %}
+    
+        <form method='post'>
+            {% csrf_token %}
+            <div class="container">
+                <div class="form-container">
+                    <div class="form">
+                        <h2 style='text-align:center'>Sign Up</h2>
+                        {{ form.username.label_tag }}
+                        <br>
+                        {{ form.username }}
+                        <br>
+                        {{ form.password1.label_tag}}
+                        <br>
+                        {{ form.password1 }}
+                        <br>
+                        {{ form.password2.label_tag }}
+                        <br>
+                        {{ form.password2 }}
+                    </div>
+                    <br>
+                    <div class="button-container">
+                        <button class='btn btn-primary' type='submit'>Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+    {% endblock registeration %}
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

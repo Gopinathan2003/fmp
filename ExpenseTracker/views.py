@@ -19,6 +19,7 @@ from plotly.graph_objs import *
 # Create your views here.
 
 def home(request):
+    home = hmt
     return render(request, 'home/home.html')
 
 
